@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+/* Tambahan CSS sesuai kebutuhan Anda */
+* {
+    margin: 0;
+    padding: 0; /* Tambahkan padding 0 untuk menghindari spasi yang tidak diinginkan */
+}
+
+html, body {
+    max-width: 400px;
+    overflow-x: hidden; /* Menambahkan nilai agar tidak ada overflow horizontal */
+    height: 100%; /* Tambahkan height agar body mengambil seluruh tinggi viewport */
+}
+
+body {
+    background: #fff; /* Menghapus koma di sini */
+    color: #333; /* Mengganti warna teks agar lebih kontras dengan latar belakang */
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menggunakan flexbox untuk penyelarasan */
+    justify-content: center;
+    height: 80vh; /* Mengisi tinggi viewport */
+}
+
+.welalxcome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Mengatur agar menutupi seluruh layar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8); /* Menggunakan rgba untuk transparansi */
+    z-index: 999;
+}
+
+.chsalxcome {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.asu {
+    width: 100%;
+    position: relative; /* Mengubah fixed menjadi relative agar tidak mengganggu tata letak */
+    height: auto; /* Mengubah tinggi menjadi auto */
+    margin-top: 40px;
+    z-index: 3
+}
+
+.nyusu {
+    border-radius: 6px;
+    height: 150px;
+    max-height: 100%;
+    z-index: 3;
+    margin-top: 20px; /* Mengurangi margin top untuk menghindari jarak yang terlalu jauh */
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px,
+                rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px,
+                rgba(0, 0, 0, 0.09) 0 -3px 5px;
+    max-width: 400px;
+}
+
+ion-icon {
+    font-size: 22px;
+    margin-left: 8px;
+    color: #06529C;
+}
+
+.button-85 {
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    max-width: 400px;
+    position: relative; /* Mengubah posisi untuk penggunaan yang lebih baik */
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(50deg, #fff000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 500%;
+    z-index: -1;
+    filter: blur(0);
+    width: calc(100% + 0px);
+    height: calc(100% + 0px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 18px;
+}
+
+@keyframes glowing-button-85 {
+    0% { background-position: 0 0; }
+    50% { background-position: 300% 0; }
+    100% { background-position: 0 0; }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Mengganti background dengan rgba untuk transparansi */
+    left: 0;
+    top: 0;
+    border-radius: 18px;
+}
+
+.xx {
+    z-index: 3;
+    margin: 20px auto; /* Mengatur margin atas dan bawah */
+    position: relative;
+    border: 5px solid #fff;
+    padding: 15px;
+    width: 80%;
+    border-radius: 18px; 
+    background: rgba(255, 255, 255, 0.9); /* Mengganti dengan rgba untuk transparansi */
+    box-shadow: rgba(0, 0, 0, 0.40) 0 5px 15px 0;
+}
+
+.patokk {
+    z-index: 3;
+    display: block;
+    margin: 10px auto; /* Mengatur margin agar tidak terlalu lebar */
+    background-color: #0F78CB;
+    color: #fff;
+    border: none;
+    width: 90%;
+    border-radius: 3px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 13px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0 10px 10px,
+                rgba(0, 0, 0, 0.20) 0 6px 6px;
+    max-width: 400px;
+}
+
+.patokk:hover { 
+    opacity: 0.7; /* Mengurangi opacity saat hover untuk efek */
+    background-color: #0F78CB; 
+}
+
+.patokk:disabled, 
+.patokk[disabled] {
+    opacity: 0.5;
+}
+
+.pilat {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 72px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 -12px 15px 0;
+    padding-top: 15px;
+}
+
+.hh {
+    z-index: 2;
+    position: fixed; 
+    top: 0; /* Mengatur top ke 0 untuk tampilan lebih baik */
+    left: 0; 
+    right: 0; 
+    width: 100%; 
+    height: 50px; 
+    background: #0F78CB; 
+    box-shadow: rgba(0, 0, 0, 0.10) 0 10px 10px, rgba(0, 0, 0, 0.20) 0 6px 6px;
+}
+
+.hu {
+    z-index: 3;
+    bottom: 170px;
+    margin-left: 26px;
+    position: absolute;
+    border: 1.5px solid #fff;
+    padding: 15px;
+    width: 78%;
+    border-radius: 18px; 
+    background-size: 100%; 
+    height: 230px; 
+    box-shadow: rgba(0, 0, 0, 0.40) 0 5px 15px 0; 
+}
+
+.yy {
+    box-sizing: border-box; 
+    height: 40px; 
+    width: 100%; /* Mengubah agar mengikuti lebar kontainer */
+    border: 1px solid rgb(0, 134, 224); 
+    background-color: #fff; /* Mengatur latar belakang agar lebih kontras */
+    border-radius: 10px; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0 2px 4px -1px; 
+    font-family: 'Nunito', sans-serif; 
+    font-weight: bold; 
+    font-size: 15px; 
+    color: rgb(28, 28, 28); 
+    padding: 0 10px; 
+    outline: none;
+}
+
+.lonte {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+}
+
+.jao {
+    width: 90%;
+}
+.zz{
+        z-index:2;position: fixed; top: 700; left: 0; right: 0; margin: 0px auto; width: 100%; height: 50px; background: #0F78CB; border-bottom: 0px solid #fff;box-shadow: rgba(0, 0, 0, 0.10) 0px 10px 10px, rgba(0, 0, 0, 0.20) 0px 6px 6px;
+        max-width: 400px;
+    }
